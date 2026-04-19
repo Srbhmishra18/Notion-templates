@@ -2,7 +2,7 @@
 
 ## German Vocabulary Tracking Template (Home + Separate Words/Verbs)
 
-Use this template structure in Notion to create one **Home page** with two button actions:
+Use this template structure in Notion to create one clean, beginner-friendly **Home page** with two quick actions:
 - **Add Word** (adds item to Words database)
 - **Add Verb** (adds item to Verbs database)
 
@@ -20,26 +20,39 @@ Create two Notion **Button** blocks:
 1. **Button Name:** `➕ Add Word`
    - Action: `New page in` → `Words DB`
    - Open: `Side peek` (recommended)
+   - Icon color: Blue (easy visual separation)
    - Optional prefill:
-     - `Status = New`
-     - `Type = Noun`
+      - `Status = New`
+      - `Type = Noun`
 
 2. **Button Name:** `➕ Add Verb`
    - Action: `New page in` → `Verbs DB`
    - Open: `Side peek` (recommended)
+   - Icon color: Orange (easy visual separation)
    - Optional prefill:
-     - `Status = New`
-     - `Tense Focus = Present`
+      - `Status = New`
+      - `Tense Focus = Present`
+
+Place these buttons at the very top so adding entries is always one click away.
 
 #### B. Navigation
 Add links to two separate pages:
 - `📘 Words Database`
 - `⚡ Verbs Database`
 
+Keep navigation directly under buttons so users always know where to go next.
+
 #### C. Dashboard Views (optional linked databases)
-- Recent words added this week
-- Verbs needing review today
-- Difficult items (Difficulty >= 4)
+- `🕒 Added This Week` (recent words + verbs)
+- `✅ Review Today` (Next Review is today or earlier)
+- `🔥 Hard Items` (Difficulty >= 4)
+
+#### D. Friendly UI polish (recommended)
+- Add short helper text under the page title: `Track words daily. Review little and often.`
+- Use callouts for tips:
+  - `Blue callout`: How to add new words
+  - `Orange callout`: How to review verbs
+- Keep only the 3 most useful dashboard views on Home to reduce clutter.
 
 ---
 
@@ -65,7 +78,12 @@ Create a **Table - Full page** database with these properties:
 Suggested views:
 - `All Words` (table)
 - `Need Review` (filter: Next Review is today or earlier)
+- `New This Week` (filter: Created time is within past week)
 - `Mastered` (filter: Status = Mastered)
+
+Recommended sort order:
+- `Need Review`: Next Review ascending
+- `All Words`: Last Reviewed descending
 
 ---
 
@@ -96,6 +114,11 @@ Suggested views:
 - `All Verbs` (table)
 - `Irregular Verbs` (filter: Regular/Irregular = Irregular)
 - `Review Queue` (filter: Next Review is today or earlier)
+- `Recently Added` (filter: Created time is within past week)
+
+Recommended sort order:
+- `Review Queue`: Next Review ascending
+- `All Verbs`: Last Reviewed descending
 
 ---
 
@@ -105,4 +128,4 @@ Suggested views:
 3. Click `➕ Add Verb` for verbs and conjugation details.
 4. Review from each database page using `Need Review`/`Review Queue` views.
 
-This setup gives you one clean home page and two clearly separated vocab systems.
+This setup gives you one clean home page, faster input actions, simpler navigation, and less visual clutter.
